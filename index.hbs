@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    {{! Set the page title }}
+    <title>{{title}}</title>
+    {{! Load favicons }}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{rootPrefix}}/assets/theme/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{rootPrefix}}/assets/theme/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{rootPrefix}}/assets/theme/images/favicon-16x16.png">
+    <link rel="manifest" href="{{rootPrefix}}/assets/theme/images/site.webmanifest">
+    <link rel="mask-icon" href="{{rootPrefix}}/assets/theme/images/safari-pinned-tab.svg" color="#fc5a5a">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    {{! Load theme's compiled SASS }}
+    <link rel="stylesheet" href="{{rootPrefix}}/assets/theme/styles.css">
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <div class="header-content">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1417.3 1417.3">
+          	<path d="M1050.3,88L1020,189.9c175.6,105.8,293,298.4,293,518.3c0,334-270.8,604.8-604.8,604.8c-43.6,0-86.1-4.6-127-13.4
+          		c-9.8-2.1-19.5-4.4-29.1-7l-7,7l-75.5,75.5c8.9,3.2,17.9,6.2,27,9.1c66.8,20.9,137.9,32.2,211.6,32.2
+          		c391.1,0,708.2-317.1,708.2-708.2C1416.4,441.1,1268.6,208.6,1050.3,88z M103.4,708.2c0-334,270.8-604.8,604.8-604.8
+          		c42.9,0,84.7,4.5,125,12.9L918,31.6C851.7,11,781.2,0,708.2,0C317.1,0,0,317.1,0,708.2c0,253.6,133.3,476.1,333.7,601.2l24.9-83.9
+          		l5.8-19.6C206.7,1096.7,103.4,914.5,103.4,708.2z"/>
+          	<polygon points="352.9,1417 595.2,709.4 371.5,709.4 1026.8,0.6 783.9,708.2 1011.2,708.2 	"/>
+          </svg>
+          <div class="header-text">
+            <div class="header-title">
+              Run your tasks with Ease!
+            </div>
+            <ul class="header-subtitle">
+              <li>Simple API and minimal configuration</li>
+              <li>Ability to schedule tasks recurrence</li>
+              <li>Dynamic task definition for complex workflows</li>
+              <li>Fast development with plugins</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1920 440.589">
+        <path d="M0,1165.589H0V725H1920v.05L0,1165.589Z" transform="translate(0 -725)"/>
+      </svg>
+    </div>
+    {{! Insert content }}
+    <div class="main">
+      {{#each contents}}
+        <h1 id="{{id}}">{{title}}</h1>
+        <hr>
+        {{#each content}}
+          {{{value}}}
+        {{/each}}
+      {{/each}}
+    </div>
+    <div class="footer">
+      <svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 1920 440.589">
+        <path d="M1920,440.59H0L1920,.05V440.59Z" transform="translate(-0.001 -0.051)"/>
+      </svg>
+      <div class="links">
+        <a href="https://github.com/chisel/ease" target="_blank">Source Code</a>
+        <a href="https://github.com/chisel/ease/issues/new" target="_blank">Send Feedback</a>
+        <a href="https://fluorite.js.org" target="_blank">Documentation Tool</a>
+        <a href="http://chiselpowered.com" target="_blank">Made By The Chisel Team</a>
+      </div>
+    </div>
+  </body>
+</html>
